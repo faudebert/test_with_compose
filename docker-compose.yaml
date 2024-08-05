@@ -1,0 +1,6 @@
+services:
+  python:
+    image: python:3.12
+    volumes:
+      - .:/data:ro
+    command: /usr/bin/env python /data/hello.py
